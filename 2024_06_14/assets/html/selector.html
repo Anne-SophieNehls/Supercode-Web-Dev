@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+        header {text-align: center; /* Typ:selector: zentriert alle texte im header */
+            background-color: rgb(58, 161, 127);color: beige;} 
+        h3,a {color: blueviolet;} /* Gruppierte selektoren: hier kann man mehreren tags den gleichen Style geben*/
+        h4~p {color: darkblue;} /* inderekter Nachbar: bezieht sich nur auf das p, was direkt auf eine h4 folgt. Wenn mehrere p tags vorhanden sind, werden alle gestylt */
+        header p {color: brown;} /* Nachfahre-Selektor: so bezieht sich es nur auf das p, was sich im Header befindet. */
+        section>p {background-color: aqua;} /* Kind selektor: Nimmt das nächste*/
+        h6+p {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}/* Direkter Nachbar: Dieser wählt nur da serste P an, anders als beim indrekten Nachbar */
+    </style> <!-- das kann man als styleoption von kleinen Stilen machen, aber wenn alles durchgestylte wird, doch lieber CSS -->
+</head>
+<body>
+    <header>
+        <h1>Selector</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores doloremque impedit tenetur explicabo recusandae et aut alias amet, inventore, labore ut perspiciatis suscipit dignissimos. Deleniti commodi fugiat maiores eaque quibusdam.
+        </p>
+    </header>
+    
+    <div>
+        <h3>Gruppierter Selektor - -getrennt durch ein "," </h3>
+        <a href="#">selfhtml</a>
+        <a href="#">mediaevent</a>
+    </div>
+
+    <div>
+        <h4>Indirekter Nachbar "~"</h4><!-- ~ sorgt für Stylining wa snur aus die nachbarn bezogen ist. Siehe im Style -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, ipsa odit? Commodi officia maxime aperiam accusamus corporis necessitatibus? Minima, ad?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque rem excepturi nam sed nobis!</p>
+    </div>
+
+    <section>
+        <h5>Kind Selektor ">"</h5>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, optio! Quibusdam, consequuntur id animi eaque provident dolore esse sequi blanditiis sint expedita saepe, porro, illo cum deleniti. Dolorum porro dolore optio. Reprehenderit quod nihil provident! Repellendus, voluptates architecto quas rerum nesciunt cumque incidunt maxime porro.</p>
+        <article>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nisi quod distinctio natus facere voluptas corrupti ipsam nam officia modi est quidem ratione error, voluptates deleniti et incidunt vel reiciendis. Hic possimus cupiditate sit ea doloremque quos sed. Aliquam unde minus, officiis ratione dicta nostrum? </p>
+        </article>
+    </section>
+
+    <div>
+        <h6>Direkter Nachbar "+"</h6>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel quae maiores quia totam fugit provident explicabo numquam eum error inventore.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi eaque deleniti id facilis, deserunt mollitia?</p>
+    </div>
+
+</body>
+</html>

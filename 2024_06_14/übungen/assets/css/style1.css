@@ -1,0 +1,41 @@
+section:nth-of-type(2) {background-color: rgb(212, 233, 226);} 
+section:nth-of-type(2) p:first-of-type {color: rgb(21, 35, 99); width: bold;}
+section:nth-of-type(2) p:last-of-type {color: rgb(50, 21, 63);} 
+
+
+section:nth-of-type(3) a:nth-of-type(even):hover {color: #d60202;}
+section:nth-of-type(3) a:nth-of-type(odd):hover {color: #d60202;}
+section:nth-of-type(3) a:nth-of-type(even):active {color: #555202;}
+section:nth-of-type(3) a:nth-of-type(odd):active {color: #555202;}
+section:nth-of-type(3) nav {background-color: blanchedalmond; font-size: 20px;}
+
+
+section:nth-of-type(4)  {background-color:  #A5D6A7;}
+section:nth-of-type(4) h2:nth-of-type(1) {background-color: #4DD0E1;}
+section:nth-of-type(4) p:first-of-type {background-color: #C5CAE9;}
+section:nth-of-type(4) article:nth-of-type(1) {background-color: #F48FB1;}
+section:nth-of-type(4) h3:nth-of-type(1) {background-color: #7986cb;}
+section:nth-of-type(4) p:nth-of-type(4) {background-color: #ff8a65;}
+section:nth-of-type(4) a:nth-of-type(1) {background-color:#304FFE; color: white;}
+/* zweiter Text wir nicht unterschielidhc zum ersten eingefärbt */
+
+
+section:nth-of-type(5) article:nth-of-type(1) {background-color: #ffffff;  width: 270px;  height: 120px; padding: 15px; border: 2px solid #333;margin: 15px; display: inline-block}
+section:nth-of-type(5) article:nth-of-type(2) {background-color: #ffffff;  width: 270px;  height: 120px; padding: 15px; border: 2px solid #333;margin: 15px; display: inline-block;}
+section:nth-of-type(5) article:nth-of-type(3) {background-color: #ffffff;  width: 270px;  height: 120px; padding: 15px; border: 2px solid #333;margin: 15px; display: inline-block}
+section:nth-of-type(5) article:nth-of-type(4) {background-color: #ffffff;  width: 270px;  height: 120px; padding: 15px; border: 2px solid #333;margin: 15px; display: inline-block}
+section:nth-of-type(5) article:nth-of-type(5) {background-color: #ffffff;  width: 270px;  height: 120px; padding: 15px; border: 2px solid #333;margin: 15px; display: inline-block}
+section:nth-of-type(5) article:nth-of-type(6) {background-color: #ffffff;   width: 270px;  height: 120px; padding: 15px; border: 2px solid #333; margin: 15px; display: inline-block}
+
+
+section:nth-of-type(6)  p:first-of-type {background-color: #A5D6A7; display: inline-block; width: 200px; padding: 25px; border: 25px solid #000000; margin: 25px; margin-left: 25%; margin-right: auto}
+
+
+section:nth-of-type(7)  p:nth-of-type(1) {border: 8px solid rgb(188, 188, 211)}
+section:nth-of-type(7)  p:nth-of-type(2) {border: 4px double  rgb(211, 188, 206)}
+section:nth-of-type(7)  p:nth-of-type(3) {border: 4px double  rgb(211, 188, 206)}
+section:nth-of-type(7)  h1:nth-of-type(1) { font-size: larger; font-weight: bold ;border: 4px}
+section:nth-of-type(7)  h2:nth-of-type(8) { font-size: larger; font-weight: bold ;border: 4px,border: 8px outset blue}
+section:nth-of-type(7)  p:nth-of-type(4) {border: 20px solid  rgb(255, 255, 255)}
+section:nth-of-type(7)  p:nth-of-type(5) {border: 14px inset rgb(85, 26, 72)}
+section:nth-of-type(7)  p:nth-of-type(6) {border: 40px outset  rgb(36, 121, 47)}

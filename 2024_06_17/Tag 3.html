@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css Tag 3.css">
+    <title>Classes & Id's</title>
+</head>
+<body>
+    <header>
+        <nav id="nav__top"> <!-- statt doppeten unterstrich "__"  kann man auch ein "-" bindestrich/minus eingeben-->
+            <a href="#section__one">Sektion one</a>
+            <a href="#section__two">Sektion two</a>
+            <a href="#section__three">Sektion three</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- *****BEN****** bem ist ein block Element modifier "__"--> 
+         <!-- camel case ist wenn man sachen nicht mit strichen trennt sondern "ImmerDenErstenBuchstabenGrossSchreibt"  -->
+         <div class="card">
+            <div class="card__header">header</div>
+            <div class="card__Body"> 
+                <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate eum facilis suscipit minus!</p>
+            </div>
+            <div  class="card__footer card__footer--highligh">footer</div>
+         </div>
+
+         <section>
+            <ul>
+                <li>Listenpunkt 1 </li>
+                <li>Listenpunkt 2</li>
+                <li>Listenpunkt 3</li>
+                <li>Listenpunkt 4</li>
+            </ul>
+         </section>
+         <button>hover me</button>
+
+         <section class="gallery">
+            <div class="gallery__img"></div>
+            <div class="gallery__img"></div>
+            <div class="gallery__img"></div>
+
+
+         </section>
+         <hr>
+
+         <section id="section__one">
+            <a href="#nav__top">back to top</a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eos possimus facere mollitia voluptates quibusdam. Maiores sint aut expedita earum! Culpa omnis maiores eaque eum, rem temporibus hic aperiam facilis.</p>
+         </section>
+
+         <section id="section__two">
+            <a href="#nav__top"></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eos possimus facere mollitia voluptates quibusdam. Maiores sint aut expedita earum! Culpa omnis maiores eaque eum, rem temporibus hic aperiam facilis.</p>
+         </section>
+
+         <section id="section__three">
+            <a href="#nav__top"></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, eos possimus facere mollitia voluptates quibusdam. Maiores sint aut expedita earum! Culpa omnis maiores eaque eum, rem temporibus hic aperiam facilis.</p>
+         </section>
+
+
+    </main>
+    
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

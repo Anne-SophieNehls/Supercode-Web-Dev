@@ -1,0 +1,45 @@
+ *{margin: 5;
+box-sizing: border-box;} /* sternregeln immer am Anfang des Stylings, hier kann man voreinstellungen rausnehmen und selbst anpassen */
+
+
+
+h1 {color: darkred; 
+    font-size: 30px; 
+    background-color: lightgrey ;}
+h2 {color: brown;}
+h3 {color: firebrick;
+    background-color: darkgrey;
+    font-family: 'Courier New', Courier, monospace;}
+section>ul>li>span {color: coral;}
+
+/* Pseudo Klassen */
+
+div:nth-of-type(2) :nth-child(2) {color: aqua;} /* nth beschreibt den typ im doc, diese sind durchnummeriert. also der zweite div im Dokument bekommt die nummer 2. Die elemente darunter (child) sind nach zeilen innerhalb des elements nummeriert. Also der eingefärbte link ist zeile 2 in dem div, somit bekommt es die 2*/
+
+div:nth-of-type(2) :nth-child(2):active {background-color: brown;} /* active reagiert nur wenn man mit dem Bereich interagiert/anklickt. */
+
+div:nth-of-type(2) :nth-child(2):hover {color: #000;} /* Hover reagiert, wenn man sich mit der Maus über den bereich bewegt */
+
+section:nth-of-type(2) {background-color: aquamarine;} 
+section:nth-of-type(2) p:first-of-type {background-color: rgb(127, 150, 255);}
+section:nth-of-type(2) p:nth-child(4) {background-color: rgb(255, 127, 227);} 
+section:nth-of-type(2) p:last-of-type {background-color: rgb(214, 127, 255);} 
+
+section:nth-of-type(3) p:nth-of-type(even) /* alle geraden zahlen. für ungerade "odd" schreiben */ {background-color: rgb(127, 150, 255);}
+
+/* Display Eigenschaften */
+a {display: block;} /* sachen werden untereinander dagestellt. Das Element nimmt aber die gesammte Breite ein  */
+article p{display: inline}/* sachen werden hintereinander dagestellt */
+/* "inline-block" nimt nur die fläche ein, die der bereich benötigt. also für z.B. die hintergrudfarbe eines textes läuft die Farbe nur so weit wie der Text */
+
+
+div :nth-of-type(3) {background-color: beige;
+width: 100px;
+height: 100px;
+padding: 10px;
+border: 15px solid 333;
+margin: 15px;}
+/* Boxelemente: 
+1. Border: Ist der Abstand der innenligenden Elemente zum Rahmen
+2. Padding: die dicke des Rahmens, 
+3. Margin: der Abstand vom Rahmen zu den Umliegenden Elementen (wenn ein Margin mit einem anderen Margin überlappt, gleicht sich das aus und es passiert nix. hier müsste man noch ein Padding hinzufügen um diesen Abstand mit zu erhalten) */

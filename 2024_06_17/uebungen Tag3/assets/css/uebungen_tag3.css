@@ -1,0 +1,17 @@
+
+
+body {text-align: center; color: #333;}
+
+h2 {margin: 0 auto;}
+
+.left {text-align: left; }
+
+.right {text-align: right;}
+
+#layout {
+        width: 500px;
+        padding: 10px; 
+        margin: 0 auto 
+}
+
+button {color: blueviolet; padding: 5px 15px 5px 15px; border: 1px solid black ; }

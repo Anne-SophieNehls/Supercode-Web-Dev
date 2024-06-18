@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <!-- - head: Enthält Meta-Informationen über das Dokument, wie den Titel, Zeichenkodierung und Verlinkungen zu CSS- -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Was ist HTML?</title>
+</head>
+
+
+<body>
+
+    <!-- - body: Beinhaltet den sichtbaren Inhalt der Webseite, wie Texte, Bilder, Links usw. -->
+
+    <!-- ! Warum Semantik im HTML?
+    !Lesbarkeit und SEO: Semantische HTML-Tags wie <header>, <footer>, <article>, und <section> 
+    !verbessern die Lesbarkeit des Codes und machen ihn verständlicher für Suchmaschinen, was die SEO (Search Engine Optimization) verbessert -->
+
+
+    <!-- * Block-Elemente beginnen immer auf einer neuen Zeile und nehmen die gesamte verfügbare Breite ein. -->
+    <!-- * <header>, <main>, <footer>, <section>, <article>, <p>, <ul>, <ol>, <li>, <div> <nav> -->
+
+    <!--* Inline-Elemente fügen sich in den Textfluss ein und nehmen nur so viel Breite ein, wie notwendig ist. Beispiele sind <img>, <a> & <span>... -->
+
+    <header> <!-- ? die Kopfzeile eines Dokuments  -->
+        <h1>Meine Webseite</h1>
+    </header>
+
+    <main> <!-- ? hier wird der Hauptinhalt des Dokuments definiert -->
+        <section>
+            <article>
+                <p>Dies ist ein <span>Inline-Element</span> innerhalb eines Block-Elements. <a
+                        href="https://www.w3schools.com/html/html_blocks.asp">Hier nachzulesen!</a> Lorem ipsum dolor
+                    sit amet.</p>
+
+                <a href="https://www.w3schools.com/html/html_lists.asp">Listen</a>
+                <ul>
+                    <li>Listenpunkt 1</li>
+                    <li>Listenpunkt 2</li>
+                    <ul>
+                        <li>Listenpunkt 1</li>
+                        <li>Listenpunkt 2</li>
+                        <ul>
+                            <li>Listenpunkt 1</li>
+                            <li>Listenpunkt 2</li>
+                        </ul>
+                    </ul>
+                </ul>
+                <ol>
+                    <li>Listenpunkt 1</li>
+                    <li>Listenpunkt 1</li>
+                </ol>
+            </article>
+        </section>
+
+        <section>
+            <!-- - Der <div>-Tag (kurz für "division") ist ein allgemeines Container-Element in HTML -->
+            <!-- - hat keine eigene Bedeutung oder Darstellung, sondern dient hauptsächlich als Struktur- und Stylingelement -->
+            <div>
+                <h1>Überschrift 1</h1> <!-- ! Hauptüberschrift, wird nur einmal pro Seite verwendet. -->
+                <h2>Überschrift 2</h2> <!-- ! Unterüberschrift, die die Hauptabschnitte auf der Seite kennzeichnet. -->
+                <h3>Überschrift 3</h3>
+                <!-- ! Unter-unterüberschrift, wird verwendet, um Unterabschnitte von <h2>-Abschnitten zu kennzeichnen. -->
+            </div>
+            <div>
+                <!-- - Suchmaschinen bewerten gut strukturierte Inhalte besser. Eine zu tief verschachtelte Struktur kann die Relevanz und Lesbarkeit der Inhalte beeinträchtigen. 
+                        -Wichtige Schlüsselwörter und Inhalte sollten in den höheren Überschriftenebenen erscheinen. -->
+                <h4>Überschrift 4</h4>
+                <h5>Überschrift 5</h5>
+                <h6>Überschrift 6</h6>
+            </div>
+
+        </section>
+        <hr>
+
+        <h2>Beispiele für verschiedene Pfade und Links</h2>
+
+        <p>Bezieht sich auf den Standort relativ zur aktuellen Position im Dateisystem. </p>
+
+        <!-- - Relativer Pfad im aktuellen Verzeichnis  -->
+        <img src="./unsplash-it_beispiel.jpg" alt="Person mit laptop">
+
+        <!-- - Relativer Pfad in verschachtelten Verzeichnissen -->
+        <img src="./assets/img/unsplash-it_beispiel.jpg" alt="Person mit laptop">
+
+        <!-- - Absolute Paths -->
+        <p>Absolute Paths</p>
+        <img src="https://unsplash.it/640" alt="Random Image">
+
+        <!--- <a> Tag -->
+        <p> a-Tag</p>
+        <a href="./assets/html/about.html">Interner Link (Relative URL)</a>
+        <a href="https://www.w3schools.com/html/default.asp" target="_blank">Externer Link (Absolute URL)</a>
+
+    </main>
+
+    <footer> <!-- ? die Fußzeile eines Dokuments  -->
+        <p>Footer-Inhalt</p>
+    </footer>
+
+
+</body>
+
+</html>
