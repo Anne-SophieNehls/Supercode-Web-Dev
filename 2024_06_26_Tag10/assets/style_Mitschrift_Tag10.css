@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* MOBILE FIRST: man fängt immer mit der Smartphonesicht an und arbeitet sich dann hoch.
+
+man kann auch Desktop first starten, ist mitlerweile aber nicht mehr so geläufig*/
+
+/*! Header */
+nav{
+    display: none;
+}
+
+.burger_wrapper{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+}
+
+.burger{
+    background-color: black;
+    height: 5px;
+    width: 30px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+/* ! Hero */
+.hero{
+    background-color: rgb(175, 238, 201);
+    height: 100svh; /* neue größeneinheit svh uns svw. ist ans Smartphone angepasst */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.her div{
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* article img{
+    max-width: 100px;
+} */
+
+/* ! MEDIA QUERIES */
+/* ? Breackpoints, 
+? Smartphone ab 576px, 
+? Tablet ab 768px, 
+? Desktop ab 992px */
+
+/* only wird verfendet, damit auch ältere Browserversionen damit umgehen können. Das kann man mitlerweile weglassen, da kaum noch alte Browservarianten verwendet werden, die das brauchen, die meisten können wes auch ohne das only lesen */
+@media only screen and (min-width: 768px) {
+    .hero{
+        background-color: palevioletred;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    
+    .burger_wrapper{
+        display: none;
+    
+    }
+
+    header{
+        color: black;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        height: 60px;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        padding: 10px 20px;
+    }
+    
+    .burger{
+
+    }
+    
+    .hero{
+        background-color: rgb(216, 154, 112);
+        flex-direction: row;
+        height: calc(100vh -60px);
+    }
+
+    .infos{        
+        flex-direction: row;
+    }
+
+    .hero img{
+        height: 100%;
+        width: 50vw;
+        object-fit: cover;
+    }
+}
