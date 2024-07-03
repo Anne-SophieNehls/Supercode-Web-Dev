@@ -2,6 +2,14 @@
     font-family: "Roboto";
     src: url("../font/Roboto-Regular.ttf");
 }
+@font-face {
+    font-family: "Black";
+    src: url("../font/Roboto-Black.ttf");
+}
+@font-face {
+    font-family: "Bold";
+    src: url("../font/Roboto-Bold.ttf");
+}
 
 @font-face {
     font-family: "RobotoBold";
@@ -145,6 +153,7 @@ img[alt="idea"] {
     height: 62px; 
 }
 
+
 .idea_vier_flex{
     display: grid;
     grid-template-areas:"eins zwei" "drei vier";
@@ -158,6 +167,16 @@ img[alt="idea"] {
 .idea_vier_flex img{
     width:32px;
     height: 32px; 
+}
+
+.idea_Box {
+    display: flex;
+    flex-direction:row;
+    gap: 1rem;
+}
+.h4_idea {
+    font-size: 18px;
+   margin-bottom: 10px;
 }
 
 /* _____________ Solution ___________________ */
@@ -192,15 +211,15 @@ img[alt="idea"] {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-left: 25em;
-    padding-right: 25em;
+    padding-left: 20em;
+    padding-right: 20em;
     padding-bottom: 10em;
     padding-top: 3em
 }
 
 .SolutionText h3{
     padding-bottom: 1em;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .Solution h3{
@@ -215,9 +234,9 @@ img[alt="idea"] {
 }
 
 .Solu01 h3{
-    color: rgba(128, 128, 128, 0.511);
-    font-size: 70px;
-    font-weight: bolder;
+    color: rgb(210, 210, 210);
+    font-size: 55px;
+   font-family:"Bold";
 }
 
 .Solu01 p{
@@ -233,9 +252,9 @@ img[alt="idea"] {
 }
 
 .Solu02 h3{
-    color: rgba(128, 128, 128, 0.511);
-    font-size: 70px;
-    font-weight: bolder;
+    color: rgb(210, 210, 210);
+    font-size: 55px;
+    font-family:"Bold";
 }
 
 .Solu02 p{
@@ -290,8 +309,13 @@ img[alt="idea"] {
     background-color: #FF3571;
     border: none;
     color: #FFFFFF;
-    padding: 1rem;
+    padding: 1rem 3rem;
     margin-bottom: 4rem;
+    border-radius: 4px;
+}
+
+.subscribe_button:hover{
+    background: linear-gradient(90deg, rgba(255,53,113,1) 0%, rgba(13,25,238,1) 100%);;
 }
 
 #created-section h6 {
