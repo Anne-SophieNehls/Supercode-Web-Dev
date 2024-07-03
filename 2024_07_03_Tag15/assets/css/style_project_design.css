@@ -2,15 +2,17 @@
     font-family: "Roboto";
     src: url("../font/Roboto-Regular.ttf");
 }
+
 @font-face {
     font-family: "Black";
     src: url("../font/Roboto-Black.ttf");
 }
+
 @font-face {
     font-family: "Bold";
     src: url("../font/Roboto-Bold.ttf");
 }
-
+/* 
 @font-face {
     font-family: "RobotoBold";
     src: url("../font/Roboto-Bold.ttf");
@@ -19,7 +21,7 @@
 @font-face {
     font-family: "RobotoBlack";
     src: url("../font/Roboto-Black.ttf");
-}
+} */
 
 *{
     margin: 0;
@@ -32,15 +34,16 @@ html{
     scroll-behavior: smooth;
 }
 
+
 img{
     max-width: 100svw;
 }
 
-/* _____________ Start Hero ___________________ */
+/* _____________ Start Hero __________________ */
 
 .hero{
     background-image: url("../img/ilustracion1.png");
-    height: 90svh;
+    height: 100svh;
 /*     background-size:  70svw;
  */    background-position: right;
     background-repeat: no-repeat;
@@ -59,7 +62,7 @@ img{
 }
 
 .hero div:nth-of-type(2){
-    max-width: 36svw;
+    max-width: 40svw;
     padding-left: 6svw;
     padding-top: 28svh;
 }
@@ -78,7 +81,7 @@ img{
     text-decoration: none;
     color: #FF3571;
     font-size: 1.2rem;
-    font-family: "RobotoBlack";
+    font-family: "Black";
     font-weight: 700;
 }
 
@@ -110,6 +113,7 @@ img{
 .Gallery img{
     padding-top: 60px;
     padding-bottom: 12svh;
+    width: 100%;
     background-color: white;
 }
 
@@ -118,12 +122,12 @@ img{
 .main-idea {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
     gap: 10rem;
-    margin-left: 10rem;
-    margin-right:10rem;
-    margin-top: 10rem;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 5rem;
     margin-bottom: 5rem;
    
     
@@ -134,17 +138,18 @@ img{
 }
 
 .main-idea h3 {
+   width: 200px; 
    font-size: 38px;
    color: #000000;
 }
 .main-idea p {
-    font-size:18px;
+    font-size:12px;
     font-weight: 200;
 }
 .h3_idea {
     width:50%;
     font-size: 38px;
-    margin-left: 12rem;
+    margin-left: 15%;
     margin-bottom: 10rem;
 }
 
@@ -178,11 +183,14 @@ img[alt="idea"] {
     font-size: 18px;
    margin-bottom: 10px;
 }
+.h4_idea + p {
+    font-size:10px;
+}
 
 /* _____________ Solution ___________________ */
 
 .Solution{
-    padding: 5em 5em 5em 5em;
+    padding: 7em 1em 7em 2em;
 }
 
 .Solution h4{
@@ -193,8 +201,8 @@ img[alt="idea"] {
 }
 
 .Solution img{
-    object-fit: contain;
-    height: 60vh;
+    /* object-fit: contain; */
+    height: 100%;
     width: 100%;
 }
 
@@ -217,13 +225,18 @@ img[alt="idea"] {
     padding-top: 3em
 }
 
+.SolutionText p{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
 .SolutionText h3{
     padding-bottom: 1em;
     font-size: 25px;
 }
 
 .Solution h3{
-    padding-bottom: 2em
+    padding-bottom: 2em;
     font-size: 25px;
 }
 

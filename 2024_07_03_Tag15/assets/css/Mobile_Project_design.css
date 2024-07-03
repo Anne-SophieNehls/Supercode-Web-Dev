@@ -1,0 +1,133 @@
+/* Mobil */
+
+@media only screen and (min-width: 380px) and (max-width: 768px) {   
+html{
+    font-size: 12px;
+}
+
+/* _____________ Start Hero __________________ */
+.hero{
+   
+    height: 100svh;
+/*     background-size:  70svw;
+ */    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+#logo{
+    padding: 5svh 40px;
+    float: right;
+}
+
+.hero h2{
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+
+.hero div:nth-of-type(2){
+    max-width: 60svw;
+    padding-left: 5svw;
+    padding-top: 15svh;
+}
+
+ /* _____________ gallery ___________________ */
+
+.Gallery img{
+    padding-top: 30px;
+    width: 1%;
+    height: 1%;
+    opacity: 0;
+}
+
+/* _____________ Every Idea ___________________ */ 
+
+.main-idea {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+    
+}
+.main-idea__info{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.main-idea h3 {
+    width: 140px; 
+    font-size: 20px;
+    color: #000000;
+ } 
+ .main-idea p {
+    font-size:10px;
+    font-weight: 200;
+}
+.h3_idea {
+    width:80%;
+    font-size: 16px;
+    margin-left: 12%;
+    margin-bottom: 10rem;
+}
+
+img[alt="idea"] { 
+    margin-left: -32px;
+    width: 30px;
+    height: 30px; 
+}
+.idea_vier_flex img{
+    width:30px;
+    height: 30px; 
+}
+.h4_idea {
+    font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.idea_vier_flex{
+    display: grid;
+    grid-template-areas:"eins zwei" "drei vier";
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right:1rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+/* _____________ Solution ___________________ */
+
+
+.SolutionText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    padding-top: 20px
+}
+.SolutionText h3{
+    padding-bottom: 1em;
+    font-size: 15px;
+    font-family: "Bold";
+}
+
+.Solu01{
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+
+.Solu02{
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+}

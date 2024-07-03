@@ -1,0 +1,95 @@
+/* TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+/* _____________ Start Hero __________________ */
+
+.hero{
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50vh;
+}
+
+#logo{
+    padding: 2svh 9svw;
+    width: 50svw;
+}
+
+.hero div:nth-of-type(2){
+    max-width: 50svw;
+    padding-left: 9svw;
+    padding-top: 25svh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+/* _____________ Every Idea ___________________ */ 
+
+.main-idea {
+    flex-direction: row;
+    gap: 3rem;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+   
+    
+}
+
+.main-idea__info{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.main-idea h3 {
+    width: 140px; 
+    font-size: 20px;
+    color: #000000;
+ } 
+ .main-idea p {
+    font-size:12px;
+    font-weight: 200;
+}
+.h3_idea {
+    width:50%;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-bottom: 10rem;
+}
+
+img[alt="idea"] { 
+    margin-left: -32px;
+    width: 30px;
+    height: 30px; 
+}
+.idea_vier_flex img{
+    width:30px;
+    height: 30px; 
+}
+.h4_idea {
+    font-size: 14px;
+   margin-bottom: 10px;
+}
+
+
+
+/* _____________ Solution ___________________ */
+
+.SolutionText{
+    padding-left: 10em;
+    padding-right: 10em;
+    padding-bottom: 5em;
+    padding-top: 3em
+}
+
+.SolutionText h3{
+    padding-bottom: 1em;
+    font-size: 15px;
+}
+
+.SolutionText p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+}
