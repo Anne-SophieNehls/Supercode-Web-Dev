@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+html{
+    font-family: "Roboto";
+}
+
+img{
+    max-width: 100svw;
+}
+
+/* _____________ Start Hero ___________________ */
+
+.hero{
+    background-image: url("../img/ilustracion1.png");
+    height: 80svh;
+    background-size:  70svw;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.logo{
+    padding: 5svh 10svw;
+    width: 50svw;
+
+}
+
+/* _____________ Hero Animation ___________________ */
+
+
+
+
+/* _____________ gallery ___________________ */
+
+.Gallery img{
+    padding-top: 60px;
+    padding-bottom: 12svh;
+    background-color: white;
+}
+
+/* _____________ Solution ___________________ */
+
+.Solution{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.Solution h3{
+    padding-bottom: 1em;
+}
+
+.Solu01{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Solu01 p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.Solu02{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Solu02 p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+/* _____________ Footer___________________ */
+
+.subscribe {
+    background-color: #FFFFFF;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.subscribe-info h4 {
+    color: #000000;
+    font-size: 28px;
+    font-family: "Roboto";
+    margin-bottom: 1rem;
+    
+}
+.subscribe-info p {
+    margin-top: 1rem;
+    font-size: 14px;
+    margin-bottom: 4rem;
+}
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.subscribe-form #email {
+    padding: 1rem;
+    box-shadow: 6px 6px 50px 6px rgba(0, 0, 255, .2);
+    margin-bottom: 2rem;
+}
+
+.subscribe-button {
+    font-size: 19px;
+    background-color: #FF3571;
+    color: #FFFFFF;
+    padding: 1rem;
+}
