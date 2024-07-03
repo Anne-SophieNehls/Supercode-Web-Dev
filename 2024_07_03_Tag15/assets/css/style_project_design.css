@@ -3,6 +3,16 @@
     src: url("../font/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("../font/Roboto-Black.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +21,7 @@
  
 html{
     font-family: "Roboto";
+    scroll-behavior: smooth;
 }
 
 img{
@@ -21,23 +32,70 @@ img{
 
 .hero{
     background-image: url("../img/ilustracion1.png");
-    height: 80svh;
-    background-size:  70svw;
-    background-position: right;
+    height: 90svh;
+/*     background-size:  70svw;
+ */    background-position: right;
     background-repeat: no-repeat;
-
+    background-size: contain;
 }
 
-.logo{
-    padding: 5svh 10svw;
-    width: 50svw;
+.Dude{
+    max-width: 45svw;
+    margin-left: 50svw;
+    margin-top: -70vh;
+}
 
+#logo{
+    padding: 5svh 6svw;
+    width: 50svw;
+}
+
+.hero div:nth-of-type(2){
+    max-width: 36svw;
+    padding-left: 6svw;
+    padding-top: 28svh;
+}
+
+.hero h2{
+    font-size: 3.5rem;
+    padding-bottom: 15px;
+}
+
+.hero p{
+    padding-bottom: 50px;
+    font-size: 1.1rem;
+}
+
+.hero a{
+    text-decoration: none;
+    color: #FF3571;
+    font-size: 1.2rem;
+    font-family: "RobotoBlack";
+    font-weight: 700;
+}
+
+.elefant{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 45px;
+    left: 35px;
 }
 
 /* _____________ Hero Animation ___________________ */
 
+@keyframes dude {
+    from {
+        transform:translateY(-8%)
+    }
+    to {
+        transform:translateY(8%)
+    }
+}
 
-
+.Dude{
+    animation: dude 4s linear infinite alternate;
+}
 
 /* _____________ gallery ___________________ */
 
@@ -47,41 +105,143 @@ img{
     background-color: white;
 }
 
+/* _____________ Every Idea ___________________ */
+
+.main-idea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10rem;
+    margin-left: 10rem;
+    margin-right:10rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+   
+    
+}
+.main-idea__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-idea h3 {
+   font-size: 38px;
+   color: #000000;
+}
+.main-idea p {
+    font-size:18px;
+    font-weight: 200;
+}
+.h3_idea {
+    width:50%;
+    font-size: 38px;
+    margin-left: 12rem;
+    margin-bottom: 10rem;
+}
+
+img[alt="idea"] { 
+    width: 60px;
+    height: 62px; 
+}
+
+.idea_vier_flex{
+    display: grid;
+    grid-template-areas:"eins zwei" "drei vier";
+    gap: 5rem;
+    margin-left: 10rem;
+    margin-right:10rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.idea_vier_flex img{
+    width:32px;
+    height: 32px; 
+}
+
 /* _____________ Solution ___________________ */
 
 .Solution{
+    padding: 5em 5em 5em 5em;
+}
+
+.Solution h4{
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1.2rem;
+}
+
+.Solution img{
+    object-fit: contain;
+    height: 60vh;
+    width: 100%;
+}
+
+.Solution div{
+    margin: auto 70px;
+}
+
+.emoji{
+    font-size: 2rem;
+}
+
+.SolutionText{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-top: 5em;
-    padding-bottom: 5em;
+    padding-left: 25em;
+    padding-right: 25em;
+    padding-bottom: 10em;
+    padding-top: 3em
+}
+
+.SolutionText h3{
+    padding-bottom: 1em;
+    font-size: 20px;
 }
 
 .Solution h3{
-    padding-bottom: 1em;
+    padding-bottom: 2em
+    font-size: 25px;
 }
 
 .Solu01{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 1em;
+}
+
+.Solu01 h3{
+    color: rgba(128, 128, 128, 0.511);
+    font-size: 70px;
+    font-weight: bolder;
 }
 
 .Solu01 p{
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 0.5em;
 }
 
 .Solu02{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
+    padding-bottom: 1em;
+}
+
+.Solu02 h3{
+    color: rgba(128, 128, 128, 0.511);
+    font-size: 70px;
+    font-weight: bolder;
 }
 
 .Solu02 p{
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 0.5em;
 }
 
 
@@ -91,6 +251,7 @@ img{
 .subscribe {
     background-color: #FFFFFF;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -100,29 +261,48 @@ img{
     color: #000000;
     font-size: 28px;
     font-family: "Roboto";
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem; 
 }
+
 .subscribe-info p {
     margin-top: 1rem;
     font-size: 14px;
     margin-bottom: 4rem;
 }
+
 .subscribe-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-}
-.subscribe-form #email {
-    padding: 1rem;
-    box-shadow: 6px 6px 50px 6px rgba(0, 0, 255, .2);
-    margin-bottom: 2rem;
 }
 
-.subscribe-button {
+.subscribe-form #email {
+    padding: 1rem;
+    box-shadow: 6px 6px 50px 6px rgba(0, 0, 4, 0.2);
+    margin-bottom: 2rem;
+    border: none;
+    text-align: center;
+}
+
+.subscribe_button {
     font-size: 19px;
     background-color: #FF3571;
+    border: none;
     color: #FFFFFF;
     padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+#created-section h6 {
+    margin-left: 4rem;
+    padding:1rem;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+#created-section img{
+    margin-left: 5px;
+    width: 28px;
+    height: 24px;
 }

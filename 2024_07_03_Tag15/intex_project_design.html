@@ -10,8 +10,11 @@
     <main>
 
     <section class="hero">
-        <div class="logo">
-            <h1>TheDesignShop</h1>
+        <a href="#logo">
+            <img src="./assets/img/logo.svg" alt="elefant" class="elefant">
+        </a>
+        <div id="logo">
+            <h1>TheDesignProject</h1>
             <p>by a WebDesigner</p>
         </div>
         <div>
@@ -19,30 +22,32 @@
                 How to become a better designer?
             </h2>
             <p>A challenge to improve your product design skills by solving problems in your daily life. 🚀 </p>
-            <a href="#">SCROLL TO SEE MORE -</a>
+            <a href="#Img1">SCROLL TO SEE MORE — </a>
         </div>
         <img src="./assets/img/ilustracion_people.png" alt="Fliegender Dude" class="Dude">
     </section>
 
     <section class="Gallery">
-        <div class="Img1"><img src="./assets/img/images.jpg" alt="#"></div>
+        <div id="Img1"><img src="./assets/img/images.jpg" alt="#"></div>
     </section>
 
     <section class="every_idea">
-        <div>
-            <div>
-                <img src="./assets/img/idea.png" alt="idea">
-                <h3 class="h3_idea">
+        <div class="main-idea">
+            <div class="main-idea__info">
+                <h3>
                 Every idea starts with a need
                 </h3>
+                <img src="./assets/img/idea.png" alt="idea">
             </div>
-            <p>Earlier this year (January 2018). I started to think about how I could improve
-                my design skills and attract more customers. I wanted to start designing
-                some ideas that for a long time I had only on paper and stored on my cell
-                phone, I decided to look for some challenge, something that makes more
-                sense with what I thought. I saw that many designers (especially in dribbble)
-                made a daily user interface, I really liked the idea, but the problem was that
-                the result was just something nice and did not solve any problem.</p>
+            <div>
+                <p>Earlier this year (January 2018). I started to think about how I could improve
+                    my design skills and attract more customers. I wanted to start designing
+                    some ideas that for a long time I had only on paper and stored on my cell
+                    phone, I decided to look for some challenge, something that makes more
+                    sense with what I thought. I saw that many designers (especially in dribbble)
+                    made a daily user interface, I really liked the idea, but the problem was that
+                    the result was just something nice and did not solve any problem.</p>
+            </div>
         </div>
         <h3 class="h3_idea"> 
             After several weeks of sticking to this challenge, I learned a lot
@@ -50,12 +55,14 @@
         <div class="idea_vier_flex">
             <div class="idea_Box">
                 <img src="./assets/img/title01_lampe.svg" alt="lampe">
-                <h4 class="h4_idea">
-                    Start with asking why
-                </h4>
-                <p>
-                    You will start seeing things differently and coming up with more effective ways of achieving goals.
-                </p>
+                <div>
+                    <h4 class="h4_idea">
+                        Start with asking why
+                    </h4>
+                    <p>
+                        You will start seeing things differently and coming up with more effective ways of achieving goals.
+                    </p>
+                </div>
             </div>
             <div class="idea_Box">
                 <img src="./assets/img/title02_git.svg" alt="Git">
@@ -86,8 +93,8 @@
         </div>
     </section>
 
-    <section>
-        <div class="Solution">
+    <section class="Solution">
+        <div class="SolutionText">
             <h3>Are you ready? Let’s go!!</h3>
             <p>The challenge lasts 30 days. On each of those days you will have
                 to create a solution to any problem you yourself are facing and
@@ -98,7 +105,7 @@
             <div><img src="./assets/img/step01.png" alt="Step 01"></div>
             <div>
                 <h3>01</h3>
-                <p>👀</p>
+                <p class="emoji">👀</p>
                 <h4>Find your problem</h4>
                 <p>It has to be a problem that’s personally affecting or affected you, like finding your keys, calling
                     a taxi or even remembering something. Open your eyes, look around you carefully and pay
@@ -108,7 +115,7 @@
         <div class="Solu02">
             <div>
                 <h3>02</h3>
-                <p>✍</p>
+                <p class="emoji">✍</p>
                 <h4>Find your problem</h4>
                 <p>It's time to look for solutions. What can you do to solve these problems? It's time to think out
                     of the box, grab your notebook and start writing down all the ideas that come to mind.</p>
@@ -119,7 +126,7 @@
             <div><img src="./assets/img/step03.png" alt="Step 03"></div>
             <div>
                 <h3>03</h3>
-                <p>👨‍💻</p>
+                <p class="emoji">👨‍💻</p>
                 <h4>Design your proposal</h4>
                 <p>How can design help solve your problem? It's time to think about features and functionality,
                     and then start designing. Don’t forget to always ask yourself: Would I actually use this?</p>
@@ -128,7 +135,7 @@
         <div class="Solu02">
             <div>
                 <h3>04</h3>
-                <p>🏄</p>
+                <p class="emoji">🏄</p>
                 <h4>Share your work</h4>
                 <p>Share your design on instagram or dribbble with the hashtag #thedesignproject Remember to
                     explain what the problem was, how you came up with the solution and how the design
@@ -150,8 +157,11 @@
             <input type="email" id="email" placeholder="Write your email here" pattern=".+@example\.com" size="30" required />
             <button class="subscribe_button" type="button">Subscribe</button>
         </form>
-    </section> 
-        <h6>Created with Love by a Webdesigner 	&#9829;</h6>
+    </section>    
+    <section id="created-section"> 
+        <h6>Created with Love by a Webdesigner <img src="./assets/img/love.png" alt="heart"></h6>
+        
+    </section>   
     </footer>
 </body>
 </html> 
