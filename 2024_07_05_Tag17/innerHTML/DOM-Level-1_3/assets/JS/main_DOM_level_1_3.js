@@ -1,0 +1,1 @@
+document.getElementById("gallery").innerHTML = "<figure role='bild1'> <img src='assets/img/doge.jpg' alt=''> </figure> <figure role='bild1'> <img src='assets/img/doge.jpg' alt=''> </figure> <figure role='bild1'> <img src='assets/img/doge.jpg' alt=''> </figure>"
