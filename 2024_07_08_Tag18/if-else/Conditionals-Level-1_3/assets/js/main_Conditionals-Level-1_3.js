@@ -1,26 +1,26 @@
-/* function malZwei() {
-    outputVal = outputVal * 2
-    output_calc_von_meinem_HTML.innerHTML = outputVal
-}
 
-function ergebnis() {
-    document.querySelector(".output").innerHTML = `das Ergebnis ist ${malZwei}`
-} */
-
-/*
-- meine funktion bekommt den value aus dem inputfeld (zahl)
-- dieses wird *2 gerechnet 
-- Ergebnisausgabe im HTML
-
-onclick="malZwei()"*/
-
+ 
 console.log("hallo")
 
-function malZwei() {
-    const inputNumber = Number(document.querySelector("#eingabe__nummer").value);
-    console.log(inputNumber);
-    const outputValue = inputNumber*2;
-    document.querySelector(".output").innerHTML = `das Ergebnis ist ${outputValue}`
-}
 
+
+function minderjaerig() {
+    let alterDassDerUserEingibt = Number(document.querySelector("#eingabe_alter").value);
+    console.log(alterDassDerUserEingibt);
+
+    if (alterDassDerUserEingibt >= 18) {
+        console.log("du bist volljaehrig");
+     document.querySelector(".output").innerHTML = `du bist volljaerig und kommst weiter`
+    } 
+    
+    else {
+        console.log("du bist minderjaehrig");
+        document.querySelector(".output").innerHTML = `du bist minderjaehrig und DARFST NICHT WEITER`
+    }
+    elem.addEventListener ('click', function (evt) {
+        evt.preventDefault();
+     });
+
+   
+}
 

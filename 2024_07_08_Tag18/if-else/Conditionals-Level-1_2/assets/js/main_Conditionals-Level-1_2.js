@@ -1,26 +1,21 @@
-/* function malZwei() {
-    outputVal = outputVal * 2
-    output_calc_von_meinem_HTML.innerHTML = outputVal
-}
-
-function ergebnis() {
-    document.querySelector(".output").innerHTML = `das Ergebnis ist ${malZwei}`
-} */
-
-/*
-- meine funktion bekommt den value aus dem inputfeld (zahl)
-- dieses wird *2 gerechnet 
-- Ergebnisausgabe im HTML
-
-onclick="malZwei()"*/
-
 console.log("hallo")
 
-function malZwei() {
+function weather() {
     const inputNumber = Number(document.querySelector("#eingabe__nummer").value);
     console.log(inputNumber);
-    const outputValue = inputNumber*2;
-    document.querySelector(".output").innerHTML = `das Ergebnis ist ${outputValue}`
+    
+    if (inputNumber > 10  || inputNumber < 0){
+        document.querySelector(".output").innerHTML = `Die Zahl muss zwischen 1 und 10 liegen`;
+    }
+
+    else if (inputNumber >= 8) {
+        document.querySelector(".output").innerHTML = `Gute Qualität`;
+    }
+     else if (inputNumber <= 7 && inputNumber >= 4) {
+        document.querySelector(".output").innerHTML = `mittlere Qualität`;
+    }
+
+     else  {
+        document.querySelector(".output").innerHTML = `Schlechte Qualität`;
+    }
 }
-
-
